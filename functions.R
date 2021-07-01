@@ -9,10 +9,12 @@ above10 <- function(x) {
   x[use]
 }
 
+
 above <- function(x, n) {
   use <- x > n
   x[use]
 }
+
 
 columnmean <- function(y, removeNA = TRUE) {
   nc <- ncol(y)
@@ -45,7 +47,9 @@ args(cat)
 function(..., file = " ", sep = " ", 
   fill = FALSE, labels = NULL, append = FALSE)
 
+  
 lm <- function(x) {x * x}
+
 
 make.power <- function(n) {
   pow <- function(x)  {
@@ -53,6 +57,7 @@ make.power <- function(n) {
   }
   pow
 }
+
 
 cube <- make.power(3)
 square <- make.power(2)

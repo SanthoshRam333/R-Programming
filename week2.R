@@ -12,9 +12,7 @@ y <- if(x > 3) {
   0
 }
 
-
 #for structure
-
 
 for(i in 1:4) {
   print(i)
@@ -45,7 +43,6 @@ for(i in seq_len(nrow(x))) {
     print(x[i, j])
   }
 }
-
 
 #while loops
 
@@ -105,7 +102,6 @@ x <- Sys.time()
 p <- as.POSIXlt(x)
 names(unclass(p))
 p$sec
-
 
 # times in R
 
