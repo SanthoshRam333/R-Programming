@@ -94,3 +94,30 @@ for(i in 1:100) {
 }
   ## do something here
 }
+
+# dates in R
+
+x <- as.Date("1970-01-01")
+unclass(x)
+
+x <- Sys.time()
+
+p <- as.POSIXlt(x)
+names(unclass(p))
+p$sec
+
+
+# times in R
+
+x <- as.Date("2012-01-01")
+y <- strptime("9 Jan 2011 11:34:21", "%d %b %Y %H:%M:%S")
+x <- as.POSIXlt(x)
+x - y 
+
+x <- as.Date("2012-03-01")
+y <- as.Date("2012-02-28")
+x-y
+
+a <- as.POSIXct("2012-10-25 01:00:00")
+b <- as.POSIXct("2012-10-25 06:00:00", tz = "EST")
+b-a 

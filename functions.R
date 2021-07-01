@@ -22,3 +22,37 @@ columnmean <- function(y, removeNA = TRUE) {
   }
   means
 }
+
+
+# lazy evaluation
+
+f <- function(a, b) {
+  print(a)
+  print(b)
+}
+
+#"..." argument
+
+myplot <- function(x, y, type = "1", ...) {
+  plot (x, y, type = type, ...)
+}
+
+
+args(paste)
+function(..., sep = " ", collapse = NULL)
+  
+args(cat)
+function(..., file = " ", sep = " ", 
+  fill = FALSE, labels = NULL, append = FALSE)
+
+lm <- function(x) {x * x}
+
+make.power <- function(n) {
+  pow <- function(x)  {
+        x^n
+  }
+  pow
+}
+
+cube <- make.power(3)
+square <- make.power(2)
