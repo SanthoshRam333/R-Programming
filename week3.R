@@ -106,8 +106,6 @@ printmessage <- function(x) {
   invisible(x)
 }
 
-x <- log(-1)
-
 printmessage2 <- function(x) {
   if(is.na(x))
     print("x is missing value!")
