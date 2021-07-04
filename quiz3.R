@@ -16,9 +16,8 @@ with(mtcars, tapply(mpg, cyl, mean))
 
 tapply(mtcars$mpg, mtcars$cyl, mean)
 
-#the absolute difference between the average 
-#horsepower of 4-cylinder cars and the average 
-#horsepower of 8-cylinder cars
+#the absolute difference between the average horsepower of 4-cylinder cars 
+#and the average horsepower of 8-cylinder cars
 
 abs(mean(split(mtcars, mtcars$cyl)$'4'$hp) - mean(split(mtcars, mtcars$cyl)$'8'$hp))
 
